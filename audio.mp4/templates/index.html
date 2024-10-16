@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      body {
+      
+        background-color: #727272;
+        
+      }
+    h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 200px;
+
+}
+
+#input {
+    margin-left: 450px;
+   display: block;
+    width: 1000px;
+    margin-top: 150px;
+    height: 50px; 
+    border-radius: 10px;
+    background: #006fb9;
+    color: #000000;
+}
+
+#btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  #btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #002fff 0%, #0099ff 100%);
+    box-shadow: 0 20px 30px -6px rgba(0, 79, 226, 0.555);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin-left: 870px;
+    margin-top: 100px;
+  }
+  
+  #btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  #btn:active {
+    opacity: 0.5;
+    }
+
+    #result{
+    margin-top: 100px;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    }
+
+    </style>
+    <title>Conversor</title>
+
+</head>
+<body>
+  
+    <h1>Coloque a URL da música que deseja baixar:</h1>
+    <form action="/executar" method="POST">
+        <input class="link-form" id="input" name="video" type="text" placeholder="Coloque o link ai meu chapa" autocomplete="off" autofocus=""> 
+        <button type="submit" name="btn" id="btn" value="Download">Download</button>
+    </form>
+    
+  
+</body>
+</html>
